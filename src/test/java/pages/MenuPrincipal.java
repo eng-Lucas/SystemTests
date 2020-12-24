@@ -8,7 +8,7 @@ public class MenuPrincipal extends BasePage {
         super(stepDriver);
     }
 
-    public void clickProcessos() {
+    public void clicarProcessos() {
         driver.click("processos");
     }
 }

@@ -3,11 +3,9 @@ package pages;
 import support.DriverQA;
 import support.ElementType;
 
-public class NovoProcesso extends BasePage{
+public class EditarProcesso extends BasePage {
 
-    private String codigo;
-
-    public NovoProcesso(DriverQA stepDriver) {
+    public EditarProcesso(DriverQA stepDriver) {
         super(stepDriver);
     }
 
@@ -33,17 +31,5 @@ public class NovoProcesso extends BasePage{
 
     public void clicarSalvar() {
         driver.click("#btn-save", "css");
-    }
-
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
-    }
-
-    public String getCodigo(){
-        return codigo;
-    }
-
-    public String getNotice() {
-        return driver.getText(".ls-alert-danger", "css");
     }
 }
